@@ -10,12 +10,21 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var gestureScrollView: UIScrollView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
+        let v1 = PendingViewController(nibName: "PendingViewController", bundle: nil)
         
+        self.addChildViewController(v1)
+        self.gestureScrollView.addSubview(v1.view)
+        v1.didMove(toParentViewController: self)
+        
+    
     }
 
     override func didReceiveMemoryWarning() {
