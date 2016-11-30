@@ -5,7 +5,6 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -118,13 +117,7 @@
                                     <navigationItem title="Home" id="RNp-XP-KmP"/>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pending" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbS-VT-FHY">
-                                <rect key="frame" x="16" y="79" width="131" height="43"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" red="1" green="0.30452865359999998" blue="0.29670858379999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rrt-W5-W3E">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" directionalLockEnabled="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="Rrt-W5-W3E">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                             </scrollView>
                         </subviews>
@@ -133,9 +126,7 @@
                             <constraint firstAttribute="trailing" secondItem="g4w-hf-Ugc" secondAttribute="trailing" id="8Ca-ff-Wf2"/>
                             <constraint firstItem="Rrt-W5-W3E" firstAttribute="bottom" secondItem="L9P-bn-OZb" secondAttribute="top" id="CpE-Df-Arv"/>
                             <constraint firstItem="Rrt-W5-W3E" firstAttribute="leading" secondItem="g4w-hf-Ugc" secondAttribute="leading" id="KPj-GE-hgS"/>
-                            <constraint firstItem="RbS-VT-FHY" firstAttribute="leading" secondItem="Adq-ao-Q05" secondAttribute="leadingMargin" id="LCz-Mc-GU1"/>
                             <constraint firstItem="g4w-hf-Ugc" firstAttribute="leading" secondItem="Adq-ao-Q05" secondAttribute="leading" id="NBC-RG-j1g"/>
-                            <constraint firstItem="RbS-VT-FHY" firstAttribute="top" secondItem="g4w-hf-Ugc" secondAttribute="bottom" constant="15" id="dvb-qt-Uvm"/>
                             <constraint firstItem="g4w-hf-Ugc" firstAttribute="top" secondItem="bth-oo-7yh" secondAttribute="bottom" id="sO1-Un-oOq"/>
                             <constraint firstItem="Rrt-W5-W3E" firstAttribute="top" secondItem="g4w-hf-Ugc" secondAttribute="bottom" id="vya-Ai-STb"/>
                             <constraint firstItem="Rrt-W5-W3E" firstAttribute="trailing" secondItem="g4w-hf-Ugc" secondAttribute="trailing" id="ztJ-0Z-K43"/>
