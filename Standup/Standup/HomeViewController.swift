@@ -22,11 +22,12 @@ class HomeViewController: UIViewController {
         let v2 = CurrentViewController(nibName: "CurrentViewController", bundle: nil)
         let v3 = DoneViewController(nibName: "DoneViewController", bundle: nil)
         
+        v1.view.frame.size.width = gestureScrollView.frame.size.width
         
         self.addChildViewController(v1)
         self.gestureScrollView.addSubview(v1.view)
         v1.didMove(toParentViewController: self)
-        
+            
         self.addChildViewController(v2)
         self.gestureScrollView.addSubview(v2.view)
         v2.didMove(toParentViewController: self)
@@ -45,7 +46,7 @@ class HomeViewController: UIViewController {
         v3.view.frame = v3Frame
         
         
-        self.gestureScrollView.contentSize = CGSize(width: self.view.frame.width * 3, height: gestureScrollView.frame.height)
+        self.gestureScrollView.contentSize = CGSize(width: self.view.frame.width * 3, height: gestureScrollView.frame.size.height)
         
     }
 

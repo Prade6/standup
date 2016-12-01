@@ -65,26 +65,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="83" y="313" width="209.5" height="41.5"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="80" y="362.5" width="215" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wGZ-5Q-RpX">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Feed" id="aML-2N-y9C"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="wGZ-5Q-RpX" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="Dne-4b-iMQ"/>
+                            <constraint firstAttribute="trailing" secondItem="wGZ-5Q-RpX" secondAttribute="trailing" id="XIV-KY-K0K"/>
+                            <constraint firstItem="wGZ-5Q-RpX" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" constant="20" id="mLk-lc-zz5"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="second" id="cPa-gy-q4n">
@@ -117,19 +109,22 @@
                                     <navigationItem title="Home" id="RNp-XP-KmP"/>
                                 </items>
                             </navigationBar>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" directionalLockEnabled="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="Rrt-W5-W3E">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="554" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" directionalLockEnabled="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="Rrt-W5-W3E">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="g4w-hf-Ugc" secondAttribute="trailing" id="8Ca-ff-Wf2"/>
-                            <constraint firstItem="Rrt-W5-W3E" firstAttribute="bottom" secondItem="L9P-bn-OZb" secondAttribute="top" id="CpE-Df-Arv"/>
-                            <constraint firstItem="Rrt-W5-W3E" firstAttribute="leading" secondItem="g4w-hf-Ugc" secondAttribute="leading" id="KPj-GE-hgS"/>
-                            <constraint firstItem="g4w-hf-Ugc" firstAttribute="leading" secondItem="Adq-ao-Q05" secondAttribute="leading" id="NBC-RG-j1g"/>
-                            <constraint firstItem="g4w-hf-Ugc" firstAttribute="top" secondItem="bth-oo-7yh" secondAttribute="bottom" id="sO1-Un-oOq"/>
-                            <constraint firstItem="Rrt-W5-W3E" firstAttribute="top" secondItem="g4w-hf-Ugc" secondAttribute="bottom" id="vya-Ai-STb"/>
-                            <constraint firstItem="Rrt-W5-W3E" firstAttribute="trailing" secondItem="g4w-hf-Ugc" secondAttribute="trailing" id="ztJ-0Z-K43"/>
+                            <constraint firstItem="g4w-hf-Ugc" firstAttribute="leading" secondItem="Rrt-W5-W3E" secondAttribute="leading" id="3mg-2f-GEL"/>
+                            <constraint firstItem="g4w-hf-Ugc" firstAttribute="leading" secondItem="Adq-ao-Q05" secondAttribute="leading" id="48r-21-Kmx"/>
+                            <constraint firstItem="g4w-hf-Ugc" firstAttribute="bottom" secondItem="Rrt-W5-W3E" secondAttribute="top" id="Msh-f1-yEC"/>
+                            <constraint firstItem="Rrt-W5-W3E" firstAttribute="leading" secondItem="Adq-ao-Q05" secondAttribute="leading" id="Rjb-bD-FYK"/>
+                            <constraint firstItem="L9P-bn-OZb" firstAttribute="top" secondItem="Rrt-W5-W3E" secondAttribute="bottom" id="UO9-Nc-HIu"/>
+                            <constraint firstItem="Rrt-W5-W3E" firstAttribute="top" secondItem="g4w-hf-Ugc" secondAttribute="bottom" id="VtT-eM-fsy"/>
+                            <constraint firstItem="g4w-hf-Ugc" firstAttribute="trailing" secondItem="Rrt-W5-W3E" secondAttribute="trailing" id="cYh-Lx-376"/>
+                            <constraint firstAttribute="trailing" secondItem="g4w-hf-Ugc" secondAttribute="trailing" id="rqT-FH-Pf4"/>
+                            <constraint firstAttribute="trailing" secondItem="Rrt-W5-W3E" secondAttribute="trailing" id="tJB-Pt-NTG"/>
+                            <constraint firstItem="g4w-hf-Ugc" firstAttribute="top" secondItem="bth-oo-7yh" secondAttribute="bottom" id="v6H-oP-ixB"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="home" selectedImage="homeSelected" id="STn-Lz-ar1">
