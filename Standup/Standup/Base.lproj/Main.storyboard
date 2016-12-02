@@ -179,10 +179,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A0g-Cu-aGC">
-                                <rect key="frame" x="16" y="40" width="343" height="397"/>
+                                <rect key="frame" x="16" y="40" width="343" height="387"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qke-g6-1SV">
-                                        <rect key="frame" x="8" y="359" width="327" height="30"/>
+                                        <rect key="frame" x="8" y="349" width="327" height="30"/>
                                         <color key="backgroundColor" red="1" green="0.30452865359999998" blue="0.29670858379999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Close">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -203,7 +203,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WzB-zB-kIx">
-                                        <rect key="frame" x="8" y="98" width="327" height="253"/>
+                                        <rect key="frame" x="8" y="98" width="327" height="243"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -253,7 +253,7 @@
                             <constraint firstItem="A0g-Cu-aGC" firstAttribute="centerX" secondItem="z0i-da-NgD" secondAttribute="centerX" id="2ql-hb-l7I"/>
                             <constraint firstItem="A0g-Cu-aGC" firstAttribute="top" secondItem="JuA-Ff-gz9" secondAttribute="bottom" constant="20" id="9CQ-r5-pUr"/>
                             <constraint firstItem="A0g-Cu-aGC" firstAttribute="leading" secondItem="z0i-da-NgD" secondAttribute="leadingMargin" id="pSG-KH-vp9"/>
-                            <constraint firstItem="rSw-aK-tKG" firstAttribute="top" secondItem="A0g-Cu-aGC" secondAttribute="bottom" constant="230" id="qea-5H-YI9"/>
+                            <constraint firstItem="rSw-aK-tKG" firstAttribute="top" secondItem="A0g-Cu-aGC" secondAttribute="bottom" constant="240" id="qea-5H-YI9"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
