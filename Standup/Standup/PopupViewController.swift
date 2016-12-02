@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PopupViewController: UIViewController {
+class PopupViewController: UIViewController  {
 
     @IBOutlet weak var ProjectNameField: UITextField!
     @IBOutlet weak var DescriptionArea: UITextView!
@@ -21,10 +21,11 @@ class PopupViewController: UIViewController {
         
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         
+        
         DescriptionArea.layer.borderColor = (UIColor.black).cgColor.copy(alpha: 0.3)
         DescriptionArea.layer.cornerRadius = 5
         
-        
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
         
     }
 
@@ -37,7 +38,18 @@ class PopupViewController: UIViewController {
     @IBAction func CloseTapped(_ sender: Any) {
         
 
-        self.view.removeFromSuperview()
+        // self.view.removeFromSuperview()
+        
+        
+        // Animation
+        
+        UIView.animate(withDuration: 0.2, delay: 0.2, options: .transitionFlipFromBottom, animations: {
+            self.view.alpha = 0
+        }) { _ in
+            self.view.removeFromSuperview()
+        }
+        
+    
         
         
     }

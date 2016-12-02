@@ -22,14 +22,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="109" y="313" width="158" height="42"/>
+                                <rect key="frame" x="108.5" y="312.5" width="158" height="42"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="90" y="363" width="195" height="17"/>
+                                <rect key="frame" x="89.5" y="362.5" width="195" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -179,10 +179,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A0g-Cu-aGC">
-                                <rect key="frame" x="24" y="36" width="327" height="331"/>
+                                <rect key="frame" x="16" y="40" width="343" height="397"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qke-g6-1SV">
-                                        <rect key="frame" x="8" y="293" width="311" height="30"/>
+                                        <rect key="frame" x="8" y="359" width="327" height="30"/>
                                         <color key="backgroundColor" red="1" green="0.30452865359999998" blue="0.29670858379999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Close">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -197,13 +197,13 @@
                                         </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" highlighted="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Project Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vyr-mR-8rt">
-                                        <rect key="frame" x="8" y="8" width="311" height="30"/>
+                                        <rect key="frame" x="8" y="60" width="327" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WzB-zB-kIx">
-                                        <rect key="frame" x="8" y="46" width="311" height="239"/>
+                                        <rect key="frame" x="8" y="98" width="327" height="253"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -213,6 +213,13 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Task" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgo-3T-nCc">
+                                        <rect key="frame" x="136" y="18" width="71" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.12149439102564108" green="0.03639675259328088" blue="0.035429908647804223" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <accessibility key="accessibilityConfiguration">
@@ -227,7 +234,7 @@
                                     <constraint firstItem="qke-g6-1SV" firstAttribute="leading" secondItem="A0g-Cu-aGC" secondAttribute="leading" constant="8" id="Gyl-Ra-WDg"/>
                                     <constraint firstItem="vyr-mR-8rt" firstAttribute="leading" secondItem="A0g-Cu-aGC" secondAttribute="leading" constant="8" id="Ltu-Bj-hRb"/>
                                     <constraint firstAttribute="bottom" secondItem="qke-g6-1SV" secondAttribute="bottom" constant="8" id="SJz-sc-34h"/>
-                                    <constraint firstItem="vyr-mR-8rt" firstAttribute="top" secondItem="A0g-Cu-aGC" secondAttribute="top" constant="8" id="VXW-0j-DOi"/>
+                                    <constraint firstItem="vyr-mR-8rt" firstAttribute="top" secondItem="A0g-Cu-aGC" secondAttribute="top" constant="60" id="VXW-0j-DOi"/>
                                     <constraint firstItem="qke-g6-1SV" firstAttribute="top" secondItem="WzB-zB-kIx" secondAttribute="bottom" constant="8" id="ZnE-ZW-lUB"/>
                                     <constraint firstAttribute="trailing" secondItem="qke-g6-1SV" secondAttribute="trailing" constant="8" id="i1f-IW-kfl"/>
                                     <constraint firstItem="WzB-zB-kIx" firstAttribute="top" secondItem="vyr-mR-8rt" secondAttribute="bottom" constant="8" id="odu-2d-qpM"/>
@@ -236,7 +243,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="8"/>
+                                        <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -244,9 +251,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="A0g-Cu-aGC" firstAttribute="centerX" secondItem="z0i-da-NgD" secondAttribute="centerX" id="2ql-hb-l7I"/>
-                            <constraint firstItem="A0g-Cu-aGC" firstAttribute="top" secondItem="JuA-Ff-gz9" secondAttribute="bottom" constant="16" id="9CQ-r5-pUr"/>
-                            <constraint firstItem="A0g-Cu-aGC" firstAttribute="leading" secondItem="z0i-da-NgD" secondAttribute="leadingMargin" constant="8" id="pSG-KH-vp9"/>
-                            <constraint firstItem="rSw-aK-tKG" firstAttribute="top" secondItem="A0g-Cu-aGC" secondAttribute="bottom" constant="300" id="qea-5H-YI9"/>
+                            <constraint firstItem="A0g-Cu-aGC" firstAttribute="top" secondItem="JuA-Ff-gz9" secondAttribute="bottom" constant="20" id="9CQ-r5-pUr"/>
+                            <constraint firstItem="A0g-Cu-aGC" firstAttribute="leading" secondItem="z0i-da-NgD" secondAttribute="leadingMargin" id="pSG-KH-vp9"/>
+                            <constraint firstItem="rSw-aK-tKG" firstAttribute="top" secondItem="A0g-Cu-aGC" secondAttribute="bottom" constant="230" id="qea-5H-YI9"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
