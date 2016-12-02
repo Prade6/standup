@@ -28,26 +28,33 @@
                     <rect key="frame" x="16" y="72" width="343" height="486"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ag-W9-S7m">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ug-Al-ErV">
                     <rect key="frame" x="16" y="568" width="343" height="40"/>
                     <color key="backgroundColor" red="1" green="0.30452865359999998" blue="0.29670858379999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                     <state key="normal" title="Add">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="AddTapped:" destination="-1" eventType="touchUpInside" id="VOw-Jv-gtU"/>
+                    </connections>
                 </button>
             </subviews>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="tSS-pM-WNY" secondAttribute="trailing" constant="16" id="7nU-8C-24e"/>
-                <constraint firstAttribute="trailing" secondItem="4Ag-W9-S7m" secondAttribute="trailing" constant="16" id="FKb-Fh-GQx"/>
+                <constraint firstItem="4ug-Al-ErV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="9dU-mc-3Ep"/>
                 <constraint firstItem="tSS-pM-WNY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="Swb-Vf-Ito"/>
-                <constraint firstAttribute="bottom" secondItem="4Ag-W9-S7m" secondAttribute="bottom" constant="59" id="VFP-Vf-TWC"/>
                 <constraint firstItem="kTV-wl-mlk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="Wfq-EJ-36a"/>
-                <constraint firstItem="4Ag-W9-S7m" firstAttribute="top" secondItem="tSS-pM-WNY" secondAttribute="bottom" constant="10" id="Yf5-pn-cut"/>
                 <constraint firstItem="kTV-wl-mlk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="16" id="apX-ts-eUx"/>
+                <constraint firstAttribute="bottom" secondItem="4ug-Al-ErV" secondAttribute="bottom" constant="59" id="bmv-zX-Vaw"/>
+                <constraint firstAttribute="trailing" secondItem="4ug-Al-ErV" secondAttribute="trailing" constant="16" id="cS4-7a-qJk"/>
                 <constraint firstItem="tSS-pM-WNY" firstAttribute="top" secondItem="kTV-wl-mlk" secondAttribute="bottom" constant="8" id="i8h-7v-5eM"/>
+                <constraint firstItem="4ug-Al-ErV" firstAttribute="top" secondItem="tSS-pM-WNY" secondAttribute="bottom" constant="10" id="rfB-R9-efk"/>
                 <constraint firstAttribute="bottom" secondItem="tSS-pM-WNY" secondAttribute="bottom" constant="109" id="u8m-1D-QSu"/>
-                <constraint firstItem="4Ag-W9-S7m" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="xt1-bp-Z9F"/>
             </constraints>
         </view>
     </objects>

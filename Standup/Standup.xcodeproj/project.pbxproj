@@ -19,6 +19,7 @@
 		276A51EC1DEED02C00268A19 /* CurrentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 276A51EA1DEED02C00268A19 /* CurrentViewController.xib */; };
 		276A51EF1DEF142D00268A19 /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276A51ED1DEF142D00268A19 /* DoneViewController.swift */; };
 		276A51F01DEF142D00268A19 /* DoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 276A51EE1DEF142D00268A19 /* DoneViewController.xib */; };
+		27E34C571DF157B100271303 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E34C561DF157B100271303 /* PopupViewController.swift */; };
 		27F0319C1DF02BED00406552 /* PendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F0319A1DF02BED00406552 /* PendingViewController.swift */; };
 		27F0319D1DF02BED00406552 /* PendingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27F0319B1DF02BED00406552 /* PendingViewController.xib */; };
 /* End PBXBuildFile section */
@@ -38,6 +39,7 @@
 		276A51EA1DEED02C00268A19 /* CurrentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrentViewController.xib; sourceTree = "<group>"; };
 		276A51ED1DEF142D00268A19 /* DoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
 		276A51EE1DEF142D00268A19 /* DoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DoneViewController.xib; sourceTree = "<group>"; };
+		27E34C561DF157B100271303 /* PopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		27F0319A1DF02BED00406552 /* PendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PendingViewController.swift; path = ../PendingViewController.swift; sourceTree = "<group>"; };
 		27F0319B1DF02BED00406552 /* PendingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PendingViewController.xib; path = ../PendingViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +86,7 @@
 				276A51ED1DEF142D00268A19 /* DoneViewController.swift */,
 				276A51EE1DEF142D00268A19 /* DoneViewController.xib */,
 				270103C81DEC9CD200477584 /* Main.storyboard */,
+				27E34C561DF157B100271303 /* PopupViewController.swift */,
 				270103CB1DEC9CD300477584 /* Assets.xcassets */,
 				270103CD1DEC9CD300477584 /* LaunchScreen.storyboard */,
 				270103D01DEC9CD300477584 /* Info.plist */,
@@ -171,6 +174,7 @@
 				27F0319C1DF02BED00406552 /* PendingViewController.swift in Sources */,
 				270103C31DEC9CD200477584 /* AppDelegate.swift in Sources */,
 				270103C51DEC9CD200477584 /* FirstViewController.swift in Sources */,
+				27E34C571DF157B100271303 /* PopupViewController.swift in Sources */,
 				270103DF1DECB45D00477584 /* SettingsViewController.swift in Sources */,
 				276A51EB1DEED02C00268A19 /* CurrentViewController.swift in Sources */,
 				270103DD1DECB3D300477584 /* HomeViewController.swift in Sources */,
